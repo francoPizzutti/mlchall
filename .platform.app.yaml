@@ -25,10 +25,6 @@ mounts:
     source: local
     source_path: uploads
 
-  'app/var':
-    source: local
-    source_path: ''
-
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
