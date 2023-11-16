@@ -21,10 +21,13 @@ dependencies:
 # application container. The 'source_path' specifies the subdirectory
 # from within the source that the mount should point at. 
 mounts:
+  'web/uploads':
+    source: local
+    source_path: uploads
+
   'web/var':
     source: local
     source_path: var
-    writable: true
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
