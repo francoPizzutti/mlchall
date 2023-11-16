@@ -1,13 +1,13 @@
 ## Requirements
 ```
-- PHP 7.4 or later
-- Composer 1
-- xdebug (to generate test reports)
+- PHP 8.1 or later
+- Composer
+- xdebug (to generate test html reports)
 ```
 
 ## Installation
 ```sh
-git clone 
+git clone https://github.com/francoPizzutti/mlchall.git
 
 cd mlchall
 
@@ -57,12 +57,18 @@ Code Coverage Report Summary:
 
 ```
 
+- Last HTML coverage report
+
+![](docs/html-coverage-report.png)
+
+- Sample postman request
+
+![](docs/post_topsecret_demo.png)
+
 
 ## Technical debt
 
-```sh
 - Adding things like authentication and rate limit validation could be a good starting point for application improvement.
 - Input validations could be a little bit more exhaustive to cover all cases.
 - CacheService and cache configuration is a lot more improvable.
 - Test cases do not contemplate ALL the possibilities. They also do not cover the 100% of application codebase.
-```
