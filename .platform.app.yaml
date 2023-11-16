@@ -25,6 +25,13 @@ mounts:
     source: local
     source_path: uploads
 
+<<<<<<< Updated upstream
+=======
+  'app/var':
+    source: local
+    source_path: /var
+
+>>>>>>> Stashed changes
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
