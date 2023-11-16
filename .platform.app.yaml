@@ -31,6 +31,8 @@ disk: 2048
 hooks:
     build: |
       set -e
+      cp .env.dist .env
+      composer install --no-interaction --no-dev
     deploy: |
       set -e
 

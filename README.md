@@ -11,7 +11,7 @@ git clone
 
 cd mlchall
 
-touch .env 
+cp .env.dist .env
 
 cp .env.test.dist .env.test
 
