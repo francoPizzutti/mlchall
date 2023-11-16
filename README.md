@@ -65,6 +65,7 @@ Code Coverage Report Summary:
 
 ![](docs/post_topsecret_demo.png)
 
+- Public URL (28 days available from now): https://www.master-7rqtwti-ysy6yew4m5vgy.us.platformsh.site/ 
 
 ## Technical debt
 
