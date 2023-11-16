@@ -13,7 +13,8 @@ class KnownSatellites
     ];
 
     public const KENOBI = [
-        -500, -200
+        -500, 
+        -200
     ];
 
     public const SKYWALKER = [

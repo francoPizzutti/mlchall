@@ -2,7 +2,6 @@
 
 namespace App\Service;
 
-use Throwable;
 use App\Service\Dto\SatellitesDTO;
 use App\Service\Dto\SatelliteDataDTO;
 use App\Exception\ValidationException;

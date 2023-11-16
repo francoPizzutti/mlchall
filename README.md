@@ -56,3 +56,13 @@ Code Coverage Report Summary:
   Lines:   96.27% (155/161)  
 
 ```
+
+
+## Technical debt
+
+```sh
+- Adding things like authentication and rate limit validation could be a good starting point for application improvement.
+- Input validations could be a little bit more exhaustive to cover all cases.
+- CacheService and cache configuration is a lot more improvable.
+- Test cases do not contemplate ALL the possibilities. They also do not cover the 100% of application codebase.
+```
