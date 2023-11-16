@@ -3,17 +3,19 @@
 namespace App\Service;
 
 use Symfony\Component\Cache\CacheItem;
-use Symfony\Contracts\Cache\CacheInterface;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 
 class CacheService
 {
+    /**
+     * TODO: review this whole class to swap to CacheInterface or another util interface for this purpose.
+     */
     private FilesystemAdapter $cache;
 
     public function __construct(
-        CacheInterface $cache
+
     ) {
-        $this->cache = $cache;
+        $this->cache = new FilesystemAdapter();
     }
     
     public function resetCache(): void {

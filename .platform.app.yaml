@@ -25,10 +25,6 @@ mounts:
     source: local
     source_path: uploads
 
-  'web/var':
-    source: local
-    source_path: var
-
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
@@ -39,6 +35,10 @@ hooks:
       composer install --no-interaction --no-dev
     deploy: |
       set -e
+
+    post_deploy: |
+        setfacl -R -m u:www-data:rwX -m u:`id -u -n`:rwX var/cache
+        setfacl -dR -m u:www-data:rwX -m u:`id -u -n`:rwX var/cache
 
 web:
   locations: 

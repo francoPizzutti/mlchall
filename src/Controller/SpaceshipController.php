@@ -91,7 +91,6 @@ class SpaceshipController extends AbstractFOSRestController {
         $sato = $this->cacheService->getItem('sato');
 
         $cacheItems = [$kenobi, $skywalker, $sato];
-        var_dump($cacheItems);
         
         if(!$this->cacheService->validateAllItemsHit($cacheItems)) {
             return new JsonResponse([

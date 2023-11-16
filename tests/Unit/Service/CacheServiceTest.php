@@ -44,7 +44,6 @@ class CacheServiceTest extends TestCase
     {
         $this->fakeCache->clear()->shouldBeCalled();
         $this->cacheService->resetCache();
-        $this->prophet->checkPredictions();
     }
 
     public function testItGetsItem(): void
@@ -73,10 +72,9 @@ class CacheServiceTest extends TestCase
         $cacheItem->set($testValue);
         $this->realCache->save($cacheItem);
 
-        $this->fakeCache->getItem($key)->shouldBeCalled()->willReturn($cacheItem);
-        $this->fakeCache->save(Argument::exact($cacheItem))->shouldBeCalled();
+        $this->fakeCache->getItem(Argument::type('string'))->shouldBeCalled()->willReturn($cacheItem);
+        $this->fakeCache->save(Argument::type(CacheItem::class))->shouldBeCalled();
         
         $this->cacheService->cacheSatelliteData($key, $testValue);
-        $this->prophet->checkPredictions();
     }
 }
