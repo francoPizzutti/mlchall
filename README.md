@@ -3,6 +3,7 @@
 - PHP 8.1 or later
 - Composer
 - xdebug (to generate test html reports)
+- Symfony CLI (used version 5.7.3)
 ```
 
 ## Installation
@@ -73,3 +74,4 @@ Code Coverage Report Summary:
 - Input validations could be a little bit more exhaustive to cover all cases.
 - CacheService and cache configuration is a lot more improvable.
 - Test cases do not contemplate ALL the possibilities. They also do not cover the 100% of application codebase.
+- Dockerize the application and even add a docker-compose file if a database service is added to the architecture would be great.
