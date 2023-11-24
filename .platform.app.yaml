@@ -24,6 +24,9 @@ mounts:
   'web/uploads':
     source: local
     source_path: uploads
+  'var/cache/dev':
+    source: local
+    source_path: cache/dev
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
