@@ -66,7 +66,7 @@ Code Coverage Report Summary:
 
 ![](docs/post_topsecret_demo.png)
 
-- Public URL (28 days available from now): https://www.master-7rqtwti-ysy6yew4m5vgy.us.platformsh.site/ 
+- Public URL (28 days available from last time I commited this): https://www.master-7rqtwti-ysy6yew4m5vgy.us.platformsh.site/  [DEAD]
 
 ## Technical debt
 
